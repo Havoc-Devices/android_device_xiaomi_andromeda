@@ -10,14 +10,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Havoc stuff
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+
+# GApps
+ifeq ($(WITH_GAPPS),true)
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_PIXEL_WALLPAPER := true
+endif
 
 # Inherit from andromeda device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_andromeda
+PRODUCT_NAME := havoc_andromeda
 PRODUCT_DEVICE := andromeda
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 3 5G
