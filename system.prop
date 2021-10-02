@@ -313,4 +313,8 @@ persist.camera.sat.fallback.lux.d=50
 #quick charge type detect
 persist.quick.charge.detect=1
 
-#
+# Havoc-OS
+ro.havoc.device.name=Xiaomi Mi MIX 3 5G
+ro.havoc.group.url=https://t.me/mimix3_5G
+ro.havoc.maintainer=Nicholas Magill
+ro.havoc.maintainer.username=Inkypen
