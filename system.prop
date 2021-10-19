@@ -312,6 +312,9 @@ persist.camera.sat.fallback.lux.d=50
 #quick charge type detect
 persist.quick.charge.detect=1
 
+# Don't write binary XML files
+persist.sys.binary_xml=false
+
 # Havoc-OS
 ro.havoc.device.name=Xiaomi Mi MIX 3 5G
 ro.havoc.group.url=https://t.me/+TXVqjjAj0ts4MTI8
