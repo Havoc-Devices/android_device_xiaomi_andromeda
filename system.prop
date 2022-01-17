@@ -315,6 +315,6 @@ persist.quick.charge.detect=1
 
 # Havoc-OS
 ro.havoc.device.name=Xiaomi Mi MIX 3 5G
-ro.havoc.group.url=https://t.me/mimix3_5G
+ro.havoc.group.url=https://t.me/+TXVqjjAj0ts4MTI8
 ro.havoc.maintainer=Nicholas Magill
 ro.havoc.maintainer.username=Inkypen
